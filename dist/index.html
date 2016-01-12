@@ -1,69 +1,34 @@
-<!doctype html>
-<html lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>jQuery TODOs</title>
+<!DOCTYPE html>
+<html>
 
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <!-- Place favicon.ico in the root directory -->
+<head>
+  <meta charset="utf-8">
+  <title>Eddy's JQuery Todo List</title>
+  <link rel="stylesheet" href="screen.css" media="screen" charset="utf-8">
+</head>
 
-    <!-- build:css styles/vendor.css -->
-    <!-- bower:css -->
-    <!-- endbower -->
-    <!-- endbuild -->
+<body>
+  <div class="input">
+    <h3>Eddy's Todo List:</h3>
+    <input type="text" class="custinput" id="item-input" placeholder="Type Here..." autofocus>
+    <button type="submit" class="btn">add</button>
+  </div>
 
-    <!-- build:css styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
+  <div class="list">
+    <h3>List:</h3>
+    <table class="items">
+      <thead>
+        <tr>
+          <th class="delete" colspan="3">
+            <span>Delete</span>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+  <script src="bundle.js" charset="utf-8"></script>
+</body>
 
-  </head>
-  <body>
-    <div class="body">
-
-    </div>
-
-    <div id="wrapper">
-      <h2 class="title"> Eddy's ToDo List </h2>
-
-      <h2 class="title2"> ADD : </h2>
-      <form id="form" onsubmit="this.reset(); return false">
-        <input type="text" id="userInput" name="todo" value="" style="width: 20em; height:3em">
-        <input type="submit" id="addNew" value="Add" style="width: 20em" >
-      </form>
-
-      <div id="toDoList">
-        <ul>
-          <li>
-            <div class = "newTask">
-            <input class='checkbox' type="checkbox"><input class='text' type="text" id="task-1" name="item" value=""><br>
-            </div>
-          </li>
-          <li>
-            <div class = "newTask">
-            <input class='checkbox' type="checkbox"><input class='text' type="text" id="task-2" name="item" value=""><br>
-            </div>
-          </li>
-          <li>
-            <div class = "newTask">
-            <input class='checkbox' type="checkbox"><input class='text' type="text" id="task-3" name="item" value="">
-            </div>
-          </li>
-        </ul>
-      </div>
-
-      </div>
-
-
-    <!-- build:js scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
-
-    <!-- build:js scripts/main.js -->
-    <script src="scripts/main.js"></script>
-    <!-- endbuild -->
-  </body>
 </html>
